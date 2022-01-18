@@ -25,7 +25,7 @@ print(number_of_words_in_sentence(sentence))
 from collections import Counter
 
 def count_each_element_in_string(string):
-    number_of_ech_element = Counter(sentence)
-    return number_of_ech_element
+    number_of_each_element = Counter(sentence)
+    return number_of_each_element
 
 print(count_each_element_in_string(sentence))
