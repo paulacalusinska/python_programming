@@ -1,18 +1,31 @@
 # string = "1234567"
 string = "abcdefg"
 
-print(string.isdigit())
+def is_contain_numbers_only(string):
+    isdigit = string.isdigit()
+    return isdigit
 
-# if string.isdigit():
-#     print("String contains all numbers")
-# else:
-#     print("String doesn't contains all numbers")
+is_number = is_contain_numbers_only(string)
+print(is_number)
 
-phrase = "Ala ma kota"
-number_of_words = len(phrase.split())
-print(number_of_words)
+is_number = is_contain_numbers_only("12345")
+print(is_number)
 
-letter = "a"
-phrase = phrase.lower()
-number_of_letter_in_phrase = phrase.count(letter)
-print(number_of_letter_in_phrase)
+
+sentence = "Ala ma kota"
+
+def number_of_words_in_sentence(string):
+
+    number_of_words = len(string.split())
+    return number_of_words
+
+print(number_of_words_in_sentence(sentence))
+
+
+from collections import Counter
+
+def count_each_element_in_string(string):
+    number_of_ech_element = Counter(sentence)
+    return number_of_ech_element
+
+print(count_each_element_in_string(sentence))
